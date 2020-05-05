@@ -9,7 +9,7 @@
     <meta property="og:type" content="website">
 <meta property="og:title" content="Search">
 <meta property="og:url" content="http://yoursite.com/search/index.html">
-<meta property="og:site_name" content="王初六的博客">
+<meta property="og:site_name" content="安全第一">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-04-28T14:57:38.719Z">
 <meta property="article:modified_time" content="2020-04-28T14:57:38.719Z">
@@ -61,7 +61,7 @@
     
   
     <div id="title">
-      <h1>王初六的博客</h1>
+      <h1>安全第一</h1>
     </div>
   </a>
   <div id="nav">
@@ -197,14 +197,15 @@
             inlineMath: [ ["$","$"], ["\\(","\\)"] ],
             skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
             processEscapes: true
-        }
+        },
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
     });
     MathJax.Hub.Queue(function() {
         var all = MathJax.Hub.getAllJax();
         for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
+            all[i].SourceElement().parentNode.classList.add('has-jax');
     });
 </script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
 </html>
