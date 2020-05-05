@@ -8,11 +8,15 @@
   border: dashed 1px #666
   padding: 1em
 
+.list-underline+ol>li>p:first-child, .list-underline+ul>li>p:first-child
+  border-bottom: dashed 1px #666
+  padding: 0.5em
+
 .underline
   border-bottom: dashed 1px #666
   padding: 0.5em
 
-.lower-alpha+ol, .lower-alpha+ul
+.list-lower-alpha+ol, .list-lower-alpha+ul
   list-style-type: lower-alpha
 
 ol > li > h3
