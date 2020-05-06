@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>符号逻辑讲义笔记</title>
+      <link href="/2020/05/06/%E7%AC%A6%E5%8F%B7%E9%80%BB%E8%BE%91%E8%AE%B2%E4%B9%89%E7%AC%94%E8%AE%B0/"/>
+      <url>/2020/05/06/%E7%AC%A6%E5%8F%B7%E9%80%BB%E8%BE%91%E8%AE%B2%E4%B9%89%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<h3 id="2-1-联结词与复合句"><a href="#2-1-联结词与复合句" class="headerlink" title="2.1 联结词与复合句"></a><span class="indianred">2.1</span> 联结词与复合句</h3><p><strong>命题联结词</strong>是带空格的表达式，使得以陈述句填入这些空格的结果总是陈述句。可以说是陈述句集合上的 $n$ 元函数，一旦给定有序的 $n$ 个陈述句作为其自变量的取值，该函数的值是个唯一的陈述句。</p><p><strong>复合句</strong>是<strong>用</strong>到联结词的陈述句。不是复合句的陈述句叫<strong>简单句</strong>。复合句中被联结的句子就是它的<strong>真子句</strong>，简单句不是用联结词联结某些句子形成的，从而没有真子句。</p><p>设 $\phi$ 和 $\psi$ 都是完整的句子。$\psi$ 是 $\phi$ 的真子句，如果以空格替换 $\phi$ 中的 $\psi$，其结果是一个联结词；$\psi$ 是 $\phi$ 的子句，如果 $\psi$ 是 $\phi$ 的真子句或 $\psi = \phi$。代入联结词的定义，说 $\psi$ 是 $\phi$ 的真子句，如果以陈述句代替 $\phi$ 中的 $\psi$ 的结果总是陈述句。</p><p>复合句的子句可一个是简单句，也可以是复合句。</p><p>一个联结词及其在某复合句中所处的一个位置称为其在句中的一个<strong>出现</strong>（这里把出现用作名词）。一个联结词被称为一个复合句的<strong>主联结词</strong>，如果它在该句中的<strong>某个出现</strong><span class="wavy">不是</span>在该句中的任何真子句中。一个没有歧义的复合句，都有<strong>唯一</strong>的主联结词。</p><p>设 $\psi$ 是 $\phi$ 的真子句。$\psi$ 被称为 $\phi$ 的直接子句，如果 $\psi$ 在 $\phi$ 中的某个出现不是在 $\phi$ 的任何其他真子句中的出现。简单地说，$\phi$ 的直接子句就是 $\phi$ 的主联结词联结的那些句子。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 数学 </tag>
+            
+            <tag> 逻辑 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>《陶哲轩实分析》习题 6.4</title>
       <link href="/2020/05/05/%E3%80%8A%E9%99%B6%E5%93%B2%E8%BD%A9%E5%AE%9E%E5%88%86%E6%9E%90%E3%80%8B%E4%B9%A0%E9%A2%98-6-4/"/>
       <url>/2020/05/05/%E3%80%8A%E9%99%B6%E5%93%B2%E8%BD%A9%E5%AE%9E%E5%88%86%E6%9E%90%E3%80%8B%E4%B9%A0%E9%A2%98-6-4/</url>
