@@ -5,7 +5,9 @@
 # Site
 title: 安全第一
 subtitle: ''
-description: ''
+description: |
+  \#> 我不能保证写的都是对的，但是能确定一定有错的，请保持警惕！
+  \>> 有对的吗？混蛋！！
 keywords:
 author: 王初六
 language: zh-CN
@@ -13,7 +15,7 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://wangchuliu.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:

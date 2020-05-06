@@ -9,7 +9,7 @@
     // copy-btn HTML
     var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"<%= __('tooltip.copy_tip') %>\">";
     btn += '<i class="far fa-clone"></i>';
-    btn += '</span>'; 
+    btn += '</span>';
     // mount it!
     $(".highlight table").before(btn);
     var clip = new ClipboardJS('.btn-copy', {
@@ -100,4 +100,23 @@
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         }());
     </script>
+<% } %>
+<!-- mathjax -->
+<% if (is_post() && page.mathjax) { %>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        },
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.classList.add('has-jax');
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 <% } %>
