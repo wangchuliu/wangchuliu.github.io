@@ -114,3 +114,6 @@ backup:
     theme: cactus
     repository:
        github: git@github.com:wangchuliu/wangchuliu.github.io.git,backup
+
+kramed:
+  smartypants: false
