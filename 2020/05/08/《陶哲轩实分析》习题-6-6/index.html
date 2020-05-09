@@ -14,7 +14,7 @@
 <meta property="og:description" content="6.6.1 证明引理 6.6.4。设 $(a_n)_{n&#x3D;0}^\infty$，$(b_n)_{n&#x3D;0}^\infty$，$(c_n)_{n&#x3D;0}^\infty$ 是实数列。那么 $(a_n)_{n&#x3D;0}^\infty$ 是 $(a_n)_{n&#x3D;0}^\infty$ 的子序列。进而，如果 $(b_n)_{n&#x3D;0}^\infty$ 是 $(a_n)_{n&#x3D;0}^\infty$ 的子序列，而 $(c_">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-05-08T07:41:42.000Z">
-<meta property="article:modified_time" content="2020-05-08T07:41:42.019Z">
+<meta property="article:modified_time" content="2020-05-09T02:12:22.147Z">
 <meta property="article:author" content="王初六">
 <meta property="article:tag" content="数学">
 <meta property="article:tag" content="陶哲轩实分析">
@@ -153,9 +153,9 @@
 
 <div class="list-underline"></div>
 
-<p>存在函数 $f(n) = n$，由自然数序的定义可知 $f(n+1) = n+1 &gt; n = f(n)$，所以 $f(n)$ 是严格增的函数，$f(n)$ 使得对一切 $n \in \mathbf{N}$ 有 $a_n = a_{f(n)}$，因此 $(a_n)_{n=0}^\infty$ 是 $(a_n)_{n=0}^\infty$ 的子序列。</p>
-<p>如果 $(b_n)_{n=0}^\infty$ 是 $(a_n)_{n=0}^\infty$ 的子序列，那么存在一个严格增的函数 $f(x)$ 使得对一切 $n \in \mathbf{N}$ 有 $b_n = a_{f(n)}$；如果 $(c_n)_{n=0}^\infty$ 是 $(b_n)_{n=0}^\infty$ 的子序列，那么存在一个严格增的函数 $g(x)$ 使得对一切 $n \in \mathbf{N}$ 有 $c_n = b_{f(n)}$；所以存在函数 $h(x) = f(g(n))$ 使得对一切 $n \in \mathbf{N}$ 有 $c_n = a_{h(n)} = a_{f(g(n))}$。</p>
-<p>$g(x)$ 是严格增的函数，对一切 $n \in \mathbf{N}$，$g(n+1) &gt; g(n)$；由于 $f(x)$ 也是严格增的函数，且 $g(n+1) &gt; g(n)$，所以 $f(g(n+1)) &gt; f(g(n))$，因此 $h(n+1) &gt; h(x)$，即 $h(x)$ 也是严格增的函数，所以 $(c_n)_{n=0}^\infty$ 是 $(a_n)_{n=0}^\infty$ 的子序列。</p>
+<p>存在函数 $f(n) = n$，由自然数序的定义可知 $f(n+1) = n+1 &gt; n = f(n)$，所以 $f(n)$ 是严格增的函数，$f(n)$ 使得对一切 $n \in \mathbb{N}$ 有 $a_n = a_{f(n)}$，因此 $(a_n)_{n=0}^\infty$ 是 $(a_n)_{n=0}^\infty$ 的子序列。</p>
+<p>如果 $(b_n)_{n=0}^\infty$ 是 $(a_n)_{n=0}^\infty$ 的子序列，那么存在一个严格增的函数 $f(x)$ 使得对一切 $n \in \mathbb{N}$ 有 $b_n = a_{f(n)}$；如果 $(c_n)_{n=0}^\infty$ 是 $(b_n)_{n=0}^\infty$ 的子序列，那么存在一个严格增的函数 $g(x)$ 使得对一切 $n \in \mathbb{N}$ 有 $c_n = b_{f(n)}$；所以存在函数 $h(x) = f(g(n))$ 使得对一切 $n \in \mathbb{N}$ 有 $c_n = a_{h(n)} = a_{f(g(n))}$。</p>
+<p>$g(x)$ 是严格增的函数，对一切 $n \in \mathbb{N}$，$g(n+1) &gt; g(n)$；由于 $f(x)$ 也是严格增的函数，且 $g(n+1) &gt; g(n)$，所以 $f(g(n+1)) &gt; f(g(n))$，因此 $h(n+1) &gt; h(x)$，即 $h(x)$ 也是严格增的函数，所以 $(c_n)_{n=0}^\infty$ 是 $(a_n)_{n=0}^\infty$ 的子序列。</p>
 <h2 id="6-6-2-你能找到两个不同的序列-a-n-n-0-infty-和-b-n-n-0-infty-使他们的每一个是另一个的子序列吗？"><a href="#6-6-2-你能找到两个不同的序列-a-n-n-0-infty-和-b-n-n-0-infty-使他们的每一个是另一个的子序列吗？" class="headerlink" title="6.6.2 你能找到两个不同的序列 $(a_n)_{n=0}^\infty$ 和 $(b_n)_{n=0}^\infty$ 使他们的每一个是另一个的子序列吗？"></a><span class="indianred">6.6.2</span> 你能找到两个不同的序列 $(a_n)_{n=0}^\infty$ 和 $(b_n)_{n=0}^\infty$ 使他们的每一个是另一个的子序列吗？</h2><p>可以。设 $a_n = (-1)^n$，$b_n = (-1)^{n+1}$。</p>
 <p>对于任意 $n \geq 0$</p>
 <script type="math/tex; mode=display">a_n - b_n = (-1)^n - (-1)^{n+1} = 2\times(-1)^n \neq 0</script><p>即 $a_n \neq b_n$，所以两个序列不相同。</p>
@@ -163,17 +163,17 @@
 <script type="math/tex; mode=display">
   b_{f(n)} = (-1)^{(n+1)+1} = (-1)^{n+2} = (-1)^n \times (-1)^2 = (-1)^{n+1} = a_n\\
   a_{f(n)} = (-1)^{n+1} = b_n</script><p>所以 $a_n$ 是 $b_n$ 的子序列，$b_n$ 也是 $a_n$ 的子序列。</p>
-<h2 id="6-6-3-设-a-n-n-0-infty-是一个序列，它不是有界的。证明它有一个子序列-b-n-n-0-infty-使得-lim-limits-n-to-infty-frac-1-b-n-存在并等于零。"><a href="#6-6-3-设-a-n-n-0-infty-是一个序列，它不是有界的。证明它有一个子序列-b-n-n-0-infty-使得-lim-limits-n-to-infty-frac-1-b-n-存在并等于零。" class="headerlink" title="6.6.3 设 $(a_n)_{n=0}^\infty$ 是一个序列，它不是有界的。证明它有一个子序列 $(b_n)_{n=0}^\infty$ 使得 $\lim\limits_{n \to \infty}\frac{1}{b_n}$ 存在并等于零。"></a><span class="indianred">6.6.3</span> 设 $(a_n)_{n=0}^\infty$ 是一个序列，它不是有界的。证明它有一个子序列 $(b_n)_{n=0}^\infty$ 使得 $\lim\limits_{n \to \infty}\frac{1}{b_n}$ 存在并等于零。</h2><p>对于每个自然数 $j$，定义号码 $n_j := \min\{n \in \mathbf{N}: |a_n| \geq j;\;n &gt; n_{j-1}\}$，当 $j = 0$ 忽略 $n &gt; n_{j-1}$。下面证明 $\{n \in \mathbf{N}: |a_n| \geq j;\;n &gt; n_{j-1}\}$ 不是空集，再证明非空的整数集合有最小值，保证定义是成功的。</p>
+<h2 id="6-6-3-设-a-n-n-0-infty-是一个序列，它不是有界的。证明它有一个子序列-b-n-n-0-infty-使得-lim-limits-n-to-infty-frac-1-b-n-存在并等于零。"><a href="#6-6-3-设-a-n-n-0-infty-是一个序列，它不是有界的。证明它有一个子序列-b-n-n-0-infty-使得-lim-limits-n-to-infty-frac-1-b-n-存在并等于零。" class="headerlink" title="6.6.3 设 $(a_n)_{n=0}^\infty$ 是一个序列，它不是有界的。证明它有一个子序列 $(b_n)_{n=0}^\infty$ 使得 $\lim\limits_{n \to \infty}\frac{1}{b_n}$ 存在并等于零。"></a><span class="indianred">6.6.3</span> 设 $(a_n)_{n=0}^\infty$ 是一个序列，它不是有界的。证明它有一个子序列 $(b_n)_{n=0}^\infty$ 使得 $\lim\limits_{n \to \infty}\frac{1}{b_n}$ 存在并等于零。</h2><p>对于每个自然数 $j$，定义号码 $n_j := \min\{n \in \mathbb{N}: |a_n| \geq j;\;n &gt; n_{j-1}\}$，当 $j = 0$ 忽略 $n &gt; n_{j-1}$。下面证明 $\{n \in \mathbb{N}: |a_n| \geq j;\;n &gt; n_{j-1}\}$ 不是空集，再证明非空的整数集合有最小值，保证定义是成功的。</p>
 <div class="list-underline"></div>
 
 <ul>
-<li><p>证明 $\{n \in \mathbf{N}: |a_n| \geq j;\;n &gt; n_{j-1}\}$ 不是空集。</p>
+<li><p>证明 $\{n \in \mathbb{N}: |a_n| \geq j;\;n &gt; n_{j-1}\}$ 不是空集。</p>
 <p>对 $j$ 进行归纳。</p>
 <p>当 $j = 0$，忽略 $n &gt; n_{j-1}$ 部分，由于 $(a_n)_{n=0}^\infty$ 不是有界的，根据定义，给定任意一个实数 $M$ 都存在 $n &gt; 0$ 使得 $|a_n| &gt; M$，因此必然存在 $|a_n| &gt; j$，从而集合不是空集。</p>
-<p>假定命题对 $j$ 成立，用反证法证明对 $j+1$ 也成立。<br>假定 $\{n \in \mathbf{N}: |a_n| \geq j+1;\;n &gt; n_j\}$ 是空集，由于 $j+1 \neq 0$，$n &gt; n_j$ 不可忽略。<br>由于 $(a_n)_{n=0}^\infty$ 不是有界的，必然存在 $|a_n| \geq j+1$，又因集合为空，可以推出对于任意 $n &gt; n_j$ 有 $|a_n| &lt; j$。因此序列 $(a_n)_{n=n_j}^\infty$ 以 $j$ 为界。<br>若 $n_j = 0$，则 $(a_n)_{n=0}^\infty$ 有界，矛盾。若 $n_j &gt; 0$，序列 $a_0,\;a_1,\;\cdots\;a_{n_j-1}$ 是有限序列因而有界，假设以 $M$ 为界，序列 $(a_n)_{n=0}^\infty$ 可以 $j + M$ 为界，矛盾。因此若命题对 $j$ 成立，则命题对 $j+1$ 也成立。这就完成了归纳。</p>
+<p>假定命题对 $j$ 成立，用反证法证明对 $j+1$ 也成立。<br>假定 $\{n \in \mathbb{N}: |a_n| \geq j+1;\;n &gt; n_j\}$ 是空集，由于 $j+1 \neq 0$，$n &gt; n_j$ 不可忽略。<br>由于 $(a_n)_{n=0}^\infty$ 不是有界的，必然存在 $|a_n| \geq j+1$，又因集合为空，可以推出对于任意 $n &gt; n_j$ 有 $|a_n| &lt; j$。因此序列 $(a_n)_{n=n_j}^\infty$ 以 $j$ 为界。<br>若 $n_j = 0$，则 $(a_n)_{n=0}^\infty$ 有界，矛盾。若 $n_j &gt; 0$，序列 $a_0,\;a_1,\;\cdots\;a_{n_j-1}$ 是有限序列因而有界，假设以 $M$ 为界，序列 $(a_n)_{n=0}^\infty$ 可以 $j + M$ 为界，矛盾。因此若命题对 $j$ 成立，则命题对 $j+1$ 也成立。这就完成了归纳。</p>
 </li>
 <li><p>证明非空的整数集合有最小值。</p>
-<p>设集合 $E \subseteq \mathbf{N}$ 不是空集，所以任何属于 $E$ 的元素都大于或等于零，因而集合 $E$ 有下界 $0$，由<strong>定理 5.5.9</strong>可得 $E$ 有最大下界 $M$，可以证明 $M$ 是自然数，进而证明 $M \in E$ 证明 $M$ 是 $E$ 的最小值。</p>
+<p>设集合 $E \subseteq \mathbb{N}$ 不是空集，所以任何属于 $E$ 的元素都大于或等于零，因而集合 $E$ 有下界 $0$，由<strong>定理 5.5.9</strong>可得 $E$ 有最大下界 $M$，可以证明 $M$ 是自然数，进而证明 $M \in E$ 证明 $M$ 是 $E$ 的最小值。</p>
 <p>由于 $M$ 是实数，根据<strong>习题 5.4.3</strong>的结论，存在整数 $N$ 使得 $N \leq M \leq N+1$，可以证明存在 $x \in E$ 使得 $M \leq x &lt; N+1$（证明过程和<strong>命题 6.3.6</strong>一样），进而有 $N \leq x &lt; N+1$。</p>
 <p>反证法证明 $N = x$。假设 $N &lt; x$，根据<strong>引理 4.1.11</strong>序的性质，$x = N + d$，其中 $d$ 是正自然数，用数学归纳法易证 $d \geq 1$ 因此 $x \geq N+1$，矛盾。因此 $N = x$。</p>
 <p>反证法证明 $M = N$。假设 $N &lt; M$，由于 $N = x$ 得 $M &gt; x$，矛盾。所以 $M = n$，即集合 $E$ 的最大下界是整数。由于 $0$ 是集合的下界，所以 $0 \leq M$，因此 $M$ 是自然数。</p>
@@ -181,7 +181,7 @@
 <p>因为 $M$ 是 $E$ 的最大下界，所以 $E$ 的元素都小于或等于 $M$，又因为 $M$ 是 $E$ 的元素，所以是 $E$ 的最小值。因此非空的整数集合有最小值。</p>
 </li>
 <li><p>令 $b_j := a_{n_j}$</p>
-<p>根据定义可知 $n_{j+1} := \min\{n \in \mathbf{N}: |a_n| \geq j+1;\;n &gt; n_j\}$，即 $n_{j+1} &gt; n_j$，所以 $n_j$ 是严格增的，由子序列定义可知序列 $(b_j)_{j=0}^\infty$ 是 $(a_n)_{n=0}^\infty$ 的子序列。</p>
+<p>根据定义可知 $n_{j+1} := \min\{n \in \mathbb{N}: |a_n| \geq j+1;\;n &gt; n_j\}$，即 $n_{j+1} &gt; n_j$，所以 $n_j$ 是严格增的，由子序列定义可知序列 $(b_j)_{j=0}^\infty$ 是 $(a_n)_{n=0}^\infty$ 的子序列。</p>
 <p>根据定义对于每个 $|b_j| = |a_{n_j}| \geq j$，根据<strong>命题 5.4.8</strong>有 $\frac{1}{|b_j|} \leq \frac{1}{j}$，展开绝对值得到 $-\frac{1}{j} \leq \frac{1}{b_j} \leq \frac{1}{j}$。由命题 <strong>6.1.11</strong> 已经知道 $\lim\limits_{j \to \infty}\frac{1}{j} = 0$，由极限算率可得 $\lim\limits_{j \to \infty}-\frac{1}{j} = 0$，再由挤压判别法可得 $\lim\limits_{j \to \infty}\frac{1}{b_j} = 0$。</p>
 </li>
 </ul>
@@ -194,11 +194,11 @@
 <div class="list-underline"></div>
 
 <ul>
-<li><p>先证明一个引理：对于任意一个严格增的函数 $f : \mathbf{N} \to \mathbf{N}$，$f(n) \geq n$。</p>
-<p>归纳 $n$。当 $n = 0$，由于 $f(n) \in \mathbf{N}$，$f(0) \geq 0$；假设 $f(n) \geq n$，由于函数是严格增的，所以 $f(n+1) &gt; f(n) \geq n$，即 $f(n+1) &gt; n$，由<strong>命题 2.2.12 (e) 款</strong>可得 $f(n+1) \geq n$。归纳完成。</p>
+<li><p>先证明一个引理：对于任意一个严格增的函数 $f : \mathbb{N} \to \mathbb{N}$，$f(n) \geq n$。</p>
+<p>归纳 $n$。当 $n = 0$，由于 $f(n) \in \mathbb{N}$，$f(0) \geq 0$；假设 $f(n) \geq n$，由于函数是严格增的，所以 $f(n+1) &gt; f(n) \geq n$，即 $f(n+1) &gt; n$，由<strong>命题 2.2.12 (e) 款</strong>可得 $f(n+1) \geq n$。归纳完成。</p>
 </li>
 <li><p>若序列 $(a_n)_{n=0}^\infty$ 收敛到 $L$。</p>
-<p>设 $(b_j)_{j=0}^\infty$ 是 $(a_n)_{n=0}^\infty$ 的子序列，存在一个严格增的函数 $f : \mathbf{N} \to \mathbf{N}$，使得 $b_j = a_{f(n)}$。</p>
+<p>设 $(b_j)_{j=0}^\infty$ 是 $(a_n)_{n=0}^\infty$ 的子序列，存在一个严格增的函数 $f : \mathbb{N} \to \mathbb{N}$，使得 $b_j = a_{f(n)}$。</p>
 <p>根据极限的定义，对于任意 $\epsilon &gt; 0$ 存在 $N_\epsilon \geq 0$ 使得每个 $n \geq N_\epsilon$ 都有 $|a_n - L| \leq \epsilon$。根据上面证明的引论，对于每个 $N_\epsilon$ 都存在 $J = f(N_\epsilon) \geq N_\epsilon$，所以对于任意 $\epsilon &gt; 0$，存在 $J = f(N_\epsilon)&gt; 0$，对于每个 $j \geq J$ 都有 $f(j) \geq f(J) \geq J \geq N_\epsilon$，所以 $|b_j - L| = |a_{f(j)} - L| \leq \epsilon$，因此 $(b_j)_{j=0}^\infty$ 也收敛到 $L$。</p>
 <p>由于 $(b_j)_{j=0}^\infty$ 是任意的，所以 $(a_n)_{n=0}^\infty$ 的每个子序列都收敛到 $L$。</p>
 </li>
@@ -381,24 +381,22 @@
         }());
     </script>
 
-<!-- mathjax -->
+<!-- katex -->
 
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        },
-        TeX: { equationNumbers: { autoNumber: "AMS" } }
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mathtex-script-type.min.js" integrity="sha384-LJ2FmexL77rmGm6SIpxq7y+XA6bkLzGZEgCywzKOZG/ws4va9fUVu2neMjvc3zdv" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+      ]
     });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.classList.add('has-jax');
-    });
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  });
+</script>
 
 
 </body>

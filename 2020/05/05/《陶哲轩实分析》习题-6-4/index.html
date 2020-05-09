@@ -14,7 +14,7 @@
 <meta property="og:description" content="最后写在最前一开始以为很好写，看别人答案觉得写得不清楚，自己写过才明白要说清楚不容易，别说把思路也写出来，觉得难的部分，憋半天憋不出来。没学过数理逻辑，符号都是乱用的，一开始觉得用符号写出来可以把条件都列出来，观察它们的形状，但是实际上做草稿可能有用，看的人并不觉得方便，用文字叙述的话，存在、任意嵌套多了也很麻烦。有时觉得想出来了，写的时候才发现不对，所以写出来还是有好处的，但是花了几天才写了一节">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-05-05T06:10:59.000Z">
-<meta property="article:modified_time" content="2020-05-06T00:13:22.433Z">
+<meta property="article:modified_time" content="2020-05-09T02:12:15.698Z">
 <meta property="article:author" content="王初六">
 <meta property="article:tag" content="数学">
 <meta property="article:tag" content="陶哲轩实分析">
@@ -161,28 +161,28 @@
   \forall \epsilon > 0,\ \forall N \geq m \wedge N < N_{\epsilon},\ \exists n = N \geq N_{\epsilon} > N,\ |a_n-c| \leq \epsilon</script><p>由此得到定义</p>
 <script type="math/tex; mode=display">\forall \epsilon > 0,\ \forall N \geq m,\ \exists n \geq N,\ |a_n-c| \leq \epsilon</script><p>说明 $c$ 是 $(a_n)_{n=m}^\infty$ 的极限点。</p>
 <p>接着证明唯一性。唯一性证明一般有两种方法，一种是假设有两个值，最后求出这两个值必须一样；另一种是假定有两个不同的值，最后推出矛盾。这里我们没有求出极限点的方法，而有判别是否为极限点的方法，所以用第二种方法。</p>
-<p>假设序列有第二个极限点 $c’ \neq c$。一个序列是可能有两个极限点的，所以我们的假设应该是会和 $c$ 是 $(a_n)_{n=m}^\infty$ 极限相矛盾。由 $c$ 是极限而 $c’$ 是极限点可以写出</p>
+<p>假设序列有第二个极限点 $c&#39; \neq c$。一个序列是可能有两个极限点的，所以我们的假设应该是会和 $c$ 是 $(a_n)_{n=m}^\infty$ 极限相矛盾。由 $c$ 是极限而 $c&#39;$ 是极限点可以写出</p>
 <script type="math/tex; mode=display">
   \forall \epsilon > 0,\ \exists N_{\epsilon} \geq m,\ \forall n \geq N_{\epsilon},\ |a_n - c| \leq \epsilon\\
   \forall \epsilon > 0,\ \forall N \geq m,\ \exists n \geq N,\ |a_n-c'| \leq \epsilon</script><p>接着推导</p>
 <script type="math/tex; mode=display">
   \forall \epsilon > 0,\ \exists N_{\epsilon} \geq m,\ \exists n \geq N_{\epsilon},
-  \ |a_n - c| \leq \epsilon \wedge |a_n-c'| \leq \epsilon</script><p>看到 $|a_n - c| \leq$ 和 $|a_n-c’| \leq \epsilon$，可以想到使用三角形不等式构造出 $|c’-c|\leq 2\epsilon$。由 <strong>命题 5.4.14</strong> 知道</p>
+  \ |a_n - c| \leq \epsilon \wedge |a_n-c'| \leq \epsilon</script><p>看到 $|a_n - c| \leq$ 和 $|a_n-c&#39;| \leq \epsilon$，可以想到使用三角形不等式构造出 $|c&#39;-c|\leq 2\epsilon$。由 <strong>命题 5.4.14</strong> 知道</p>
 <script type="math/tex; mode=display">\exists q \in \mathbb{Q},\ 0 < q < |c'-c|</script><p>所以</p>
 <script type="math/tex; mode=display">
   \forall \epsilon = \frac{q}{2} > 0,\ \exists N_{\epsilon} \geq m,\ \exists n \geq N_{\epsilon},
-  \ |a_n - c| \leq \frac{q}{2} \wedge |a_n-c'| \leq \frac{q}{2}</script><p>由于 $|c’ - a_n| = |a_n-c’| \leq \frac{q}{2}$</p>
+  \ |a_n - c| \leq \frac{q}{2} \wedge |a_n-c'| \leq \frac{q}{2}</script><p>由于 $|c&#39; - a_n| = |a_n-c&#39;| \leq \frac{q}{2}$</p>
 <script type="math/tex; mode=display">|c'-a_n + a_n - c| = |c'-c| \leq |c' - a_n| + |a_n - c| \leq q</script><p>于是</p>
 <script type="math/tex; mode=display">
   \forall \epsilon = \frac{q}{2} > 0,\ \exists N_{\epsilon} \geq m,\ \exists n \geq N_{\epsilon},
-  \ |c'-c| \leq q</script><p>这与 $0 &lt; q &lt; |c’-c| $ 矛盾。因此，$c$ 是 $(a_n)_{n=m}^\infty$ 的仅有的极限点。</p>
-<h2 id="6-4-2-对极限点、上极限和下极限，叙述并证明习题-6-1-3-及-6-1-4-相似的命题。"><a href="#6-4-2-对极限点、上极限和下极限，叙述并证明习题-6-1-3-及-6-1-4-相似的命题。" class="headerlink" title="6.4.2 对极限点、上极限和下极限，叙述并证明习题 6.1.3 及 6.1.4 相似的命题。"></a><span class="indianred">6.4.2</span> 对极限点、上极限和下极限，叙述并证明习题 6.1.3 及 6.1.4 相似的命题。</h2><p>首先叙述命题。设 $(a_n)_{n=m}^\infty$ 是实数列，$k,m,m’ \in \mathbb{Z}$，$m’ \geq m$，$k\geq 0$，$c \in \mathbb{R}^*$。</p>
+  \ |c'-c| \leq q</script><p>这与 $0 &lt; q &lt; |c&#39;-c| $ 矛盾。因此，$c$ 是 $(a_n)_{n=m}^\infty$ 的仅有的极限点。</p>
+<h2 id="6-4-2-对极限点、上极限和下极限，叙述并证明习题-6-1-3-及-6-1-4-相似的命题。"><a href="#6-4-2-对极限点、上极限和下极限，叙述并证明习题-6-1-3-及-6-1-4-相似的命题。" class="headerlink" title="6.4.2 对极限点、上极限和下极限，叙述并证明习题 6.1.3 及 6.1.4 相似的命题。"></a><span class="indianred">6.4.2</span> 对极限点、上极限和下极限，叙述并证明习题 6.1.3 及 6.1.4 相似的命题。</h2><p>首先叙述命题。设 $(a_n)_{n=m}^\infty$ 是实数列，$k,m,m&#39; \in \mathbb{Z}$，$m&#39; \geq m$，$k\geq 0$，$c \in \mathbb{R}^*$。</p>
 <ol>
-<li>$c$ 是 $(a_n)_{n=m}^\infty$ 的极限点当且仅当 $c$ 是 $(a_n)_{n=m’}^\infty$ 的极限点。</li>
+<li>$c$ 是 $(a_n)_{n=m}^\infty$ 的极限点当且仅当 $c$ 是 $(a_n)_{n=m&#39;}^\infty$ 的极限点。</li>
 <li>$c$ 是 $(a_n)_{n=m}^\infty$ 的极限点当且仅当 $c$ 是 $(a_{n+k})_{n=m}^\infty$ 的极限点。</li>
-<li>$(a_n)_{n=m}^\infty$ 的上极限等于 $c$ 等且仅当 $(a_n)_{n=m’}^\infty$ 的上极限等于 $c$。</li>
+<li>$(a_n)_{n=m}^\infty$ 的上极限等于 $c$ 等且仅当 $(a_n)_{n=m&#39;}^\infty$ 的上极限等于 $c$。</li>
 <li>$(a_n)_{n=m}^\infty$ 的上极限等于 $c$ 等且仅当 $(a_{n+k})_{n=m}^\infty$ 的上极限等于 $c$。</li>
-<li>$(a_n)_{n=m}^\infty$ 的下极限等于 $c$ 等且仅当 $(a_n)_{n=m’}^\infty$ 的下极限等于 $c$。</li>
+<li>$(a_n)_{n=m}^\infty$ 的下极限等于 $c$ 等且仅当 $(a_n)_{n=m&#39;}^\infty$ 的下极限等于 $c$。</li>
 <li>$(a_n)_{n=m}^\infty$ 的下极限等于 $c$ 等且仅当 $(a_{n+k})_{n=m}^\infty$ 的下极限等于 $c$。</li>
 </ol>
 <!---->
@@ -190,17 +190,17 @@
 <li><p><div class="green bold">证明 $c$ 是 $(a_n)_{n=m}^\infty$ 的极限点当且仅当 $c$ 是 $(a_n)_{n=m'}^\infty$ 的极限点。</div></p>
 <ul>
 <li><p><div class="underline">先证：若 $c$ 是 $(a_n)_{n=m}^\infty$ 的极限点，则 $c$ 是 $(a_n)_{n=m'}^\infty$ 的极限点</div><br>把“$c$ 是 $(a_n)_{n=m}^\infty$ 的极限点”根据定义展开</p>
-<script type="math/tex; mode=display">\forall \epsilon > 0,\ \forall N \geq m,\ \exists n \geq N,\ |a_n-c| \leq \epsilon</script><p>若 $N \geq m’$，已知 $m’ \geq m$，有序的传递性得到 $N \geq m$，所以</p>
-<script type="math/tex; mode=display">\forall \epsilon > 0,\ \forall N \geq m',\ \exists n \geq N,\ |a_n-c| \leq \epsilon</script><p>从而证明了 $c$ 是 $(a_n)_{n=m’}^\infty$ 的极限点。</p>
+<script type="math/tex; mode=display">\forall \epsilon > 0,\ \forall N \geq m,\ \exists n \geq N,\ |a_n-c| \leq \epsilon</script><p>若 $N \geq m&#39;$，已知 $m&#39; \geq m$，有序的传递性得到 $N \geq m$，所以</p>
+<script type="math/tex; mode=display">\forall \epsilon > 0,\ \forall N \geq m',\ \exists n \geq N,\ |a_n-c| \leq \epsilon</script><p>从而证明了 $c$ 是 $(a_n)_{n=m&#39;}^\infty$ 的极限点。</p>
 </li>
 <li><p><div class="underline">再证：若 $c$ 是 $(a_n)_{n=m'}^\infty$ 的极限点，则 $c$ 是 $(a_n)_{n=m}^\infty$ 的极限点</div><br>同样把条件展开</p>
 <script type="math/tex; mode=display">\forall \epsilon > 0,\ \forall N \geq m',\ \exists n \geq N,\ |a_n-c| \leq \epsilon</script><p>对于任意满足 $N \geq m$ 的 $N$，可分为两种情况考虑</p>
 <ol>
-<li>$N \geq m’$。</li>
-<li>$m’ &gt; N \geq m$。</li>
+<li>$N \geq m&#39;$。</li>
+<li>$m&#39; &gt; N \geq m$。</li>
 </ol>
-<p>若 $N \geq m’$，这跟已知条件完全一样</p>
-<script type="math/tex; mode=display">\forall \epsilon > 0,\ \forall N \geq m',\ \exists n \geq N,\ |a_n-c| \leq \epsilon</script><p>若 $m’ &gt; N \geq m$。先考虑 $N = m’$ 时，由于 $N \geq m’$，所以必然存在一个特定的 $n_{m’} \geq N = m’$ 使得 $|a_{n_{m’}}-c| \leq \epsilon$。所以若 $m’ &gt; N$   $n_{m’} &gt; N$ 使得 $|a_{n_{m’}}-c| \leq \epsilon$，也就是</p>
+<p>若 $N \geq m&#39;$，这跟已知条件完全一样</p>
+<script type="math/tex; mode=display">\forall \epsilon > 0,\ \forall N \geq m',\ \exists n \geq N,\ |a_n-c| \leq \epsilon</script><p>若 $m&#39; &gt; N \geq m$。先考虑 $N = m&#39;$ 时，由于 $N \geq m&#39;$，所以必然存在一个特定的 $n_{m&#39;} \geq N = m&#39;$ 使得 $|a_{n_{m&#39;}}-c| \leq \epsilon$。所以若 $m&#39; &gt; N$   $n_{m&#39;} &gt; N$ 使得 $|a_{n_{m&#39;}}-c| \leq \epsilon$，也就是</p>
 <script type="math/tex; mode=display">\forall \epsilon > 0,\ \forall m' > N \geq m,\ \exists n = n_{m'} \geq N,\ |a_n-c| \leq \epsilon</script><p>综合 $N$ 的两种情况就得到</p>
 <script type="math/tex; mode=display">\forall \epsilon > 0,\ \forall N \geq m,\ \exists n \geq N,\ |a_n-c| \leq \epsilon</script><p>这也就证明了 $c$ 是 $(a_n)_{n=m}^\infty$ 的极限点。<br><br></p>
 </li>
@@ -228,12 +228,12 @@
 <li><div class="underline">首先要证的是：$\inf(a_N^+)_{N=m}^\infty = c \;\;\Longrightarrow\;\; \inf(a_N^+)_{N=m'}^\infty = c$。</div>
 
 <p>先看左边的 $\inf(a_N^+)_{N=m}^\infty = c$，由 <strong>命题 6.3.6</strong> 可以知道</p>
-<script type="math/tex; mode=display">\forall N \geq m,\ c \leq a_N^+</script><p>由于 $m’ \geq m$，当 $N \geq m’$ 自动就有 $N \geq m’ \geq m$，所以</p>
-<script type="math/tex; mode=display">\forall N \geq m',\ c \leq a_N^+</script><p>由此，我们知道 $c$ 是 $(a_N^+)_{N=m’}^\infty$ 的一个下界，只要再证明这个下界是最小下界就可以了。这里使用反正法，假设 $c$ 不是 $(a_N^+)_{N=m’}^\infty$ 的最大下界，我们企图以此推出 $c$ 不是 $(a_N^+)_{n=m}^\infty$ 的最大下界得到矛盾。</p>
+<script type="math/tex; mode=display">\forall N \geq m,\ c \leq a_N^+</script><p>由于 $m&#39; \geq m$，当 $N \geq m&#39;$ 自动就有 $N \geq m&#39; \geq m$，所以</p>
+<script type="math/tex; mode=display">\forall N \geq m',\ c \leq a_N^+</script><p>由此，我们知道 $c$ 是 $(a_N^+)_{N=m&#39;}^\infty$ 的一个下界，只要再证明这个下界是最小下界就可以了。这里使用反正法，假设 $c$ 不是 $(a_N^+)_{N=m&#39;}^\infty$ 的最大下界，我们企图以此推出 $c$ 不是 $(a_N^+)_{n=m}^\infty$ 的最大下界得到矛盾。</p>
 <p>但是，想象一下若</p>
 <script type="math/tex; mode=display">
  (a_N^+)_{n=m}^\infty = 1,\ 2,\ 3,\ 4,\ 5\ \cdots\\
- (a_N^+)_{n=m'}^\infty = 2,\ 3,\ 4,\ 5,\ 6\ \cdots</script><p>则有 $c=1$ 是 $(a_N^+)_{n=m}^\infty$ 和 $(a_N^+)_{n=m’}^\infty$ 的下界，同时存在 $M = 2 &gt; c$ 而没有矛盾。也就是说不是随便什么序列都可以推出矛盾的，这提示我们考察 $a_N^+$ 的性质。</p>
+ (a_N^+)_{n=m'}^\infty = 2,\ 3,\ 4,\ 5,\ 6\ \cdots</script><p>则有 $c=1$ 是 $(a_N^+)_{n=m}^\infty$ 和 $(a_N^+)_{n=m&#39;}^\infty$ 的下界，同时存在 $M = 2 &gt; c$ 而没有矛盾。也就是说不是随便什么序列都可以推出矛盾的，这提示我们考察 $a_N^+$ 的性质。</p>
 <div class="box" id="6.3.2-3-x">
 幸运的是 $(a_N^+)_{n=m}^\infty$ 是一个递减序列，使得推理可以继续进行。
 <br>现在证明: $ N' > N \;\;\Longrightarrow\;\; a_{N'}^+ \leq a_N^+ $。
@@ -248,11 +248,11 @@ $$ a_{N'}^+ =\sup(a_n)_{n=N'}^\infty \leq a_N^+ $$
 </div>
 
 <p>据此可知</p>
-<script type="math/tex; mode=display">\forall m' > N \geq m,\ a_N^+ \geq a_{m'}^+</script><p>进而由反证法的假设假设： $c$ 不是 $(a_N^+)_{N=m’}^\infty$ 的最大下界得到</p>
+<script type="math/tex; mode=display">\forall m' > N \geq m,\ a_N^+ \geq a_{m'}^+</script><p>进而由反证法的假设假设： $c$ 不是 $(a_N^+)_{N=m&#39;}^\infty$ 的最大下界得到</p>
 <script type="math/tex; mode=display">
  \exists M \in \mathbb{R}^*,\ \forall N \geq m',\ c < M \leq a_N^+\\
  \exists M \in \mathbb{R}^*,\ \forall m' > N \geq m,\ c < M \leq a_{m'}^+ \leq a_N^+</script><p>综合起来就是</p>
-<script type="math/tex; mode=display">\exists M \in \mathbb{R}^*,\ \forall N \geq m,\ c < M \leq a_N^+</script><p>也就是存在一个下界 $M$ 比 $c$ 还大，所以 $c$ 不是 $(a_N^+)_{n=m}^\infty$ 的最大下界，得到矛盾，从而证明了 $\inf(a_N^+)_{N=m’}^\infty = c$。</p>
+<script type="math/tex; mode=display">\exists M \in \mathbb{R}^*,\ \forall N \geq m,\ c < M \leq a_N^+</script><p>也就是存在一个下界 $M$ 比 $c$ 还大，所以 $c$ 不是 $(a_N^+)_{n=m}^\infty$ 的最大下界，得到矛盾，从而证明了 $\inf(a_N^+)_{N=m&#39;}^\infty = c$。</p>
 </li>
 <li><div class="underline">反过来证：$\inf(a_N^+)_{N=m'}^\infty = c \;\;\Longrightarrow\;\; \inf(a_N^+)_{N=m}^\infty = c$。</div>
 
@@ -262,9 +262,9 @@ $$ a_{N'}^+ =\sup(a_n)_{n=N'}^\infty \leq a_N^+ $$
 <li>$c$ 是最大下界。</li>
 </ol>
 <p>这次第一步直接过不去，用反证法。假设 $c$ 不是 $(a_N^+)_{N=m}^\infty$ 的下界</p>
-<script type="math/tex; mode=display">\exists N \geq m,\ a_N^+ < c</script><p>对于这个特定的 $N$ 分两种情况讨论：$N &lt; m’$ 和 $N \geq m’$。<br>若是 $N \geq m’$，说明 $c$ 不是 $(a_N^+)_{N=m’}^\infty$ 的下界，矛盾。<br>若是 $N &lt;&gt; m’$，如上面虚线框内所证明的，$a_N^+ \geq a_{m’}^+$，所以有 $c &gt; a_N^+ \geq a_{m’}^+$，这也与 $c$ 是 $(a_N^+)_{N=m’}^\infty$ 的下界矛盾。<br>所以说 $c$ 一定是 $\inf(a_N^+)_{N=m}^\infty$ 的下界。</p>
+<script type="math/tex; mode=display">\exists N \geq m,\ a_N^+ < c</script><p>对于这个特定的 $N$ 分两种情况讨论：$N &lt; m&#39;$ 和 $N \geq m&#39;$。<br>若是 $N \geq m&#39;$，说明 $c$ 不是 $(a_N^+)_{N=m&#39;}^\infty$ 的下界，矛盾。<br>若是 $N &lt;&gt; m&#39;$，如上面虚线框内所证明的，$a_N^+ \geq a_{m&#39;}^+$，所以有 $c &gt; a_N^+ \geq a_{m&#39;}^+$，这也与 $c$ 是 $(a_N^+)_{N=m&#39;}^\infty$ 的下界矛盾。<br>所以说 $c$ 一定是 $\inf(a_N^+)_{N=m}^\infty$ 的下界。</p>
 <p>第二步也用反证法。假设 $c$ 不是 $(a_N^+)_{N=m}^\infty$ 的最大下界</p>
-<script type="math/tex; mode=display">\exists M \in \mathbb{R}^*,\ \forall N \geq m,\ c < M \leq a_N^+</script><p>由于 $m’ &gt; m$，若 $N \geq m’$，自然有 $N \geq m’$，于是</p>
+<script type="math/tex; mode=display">\exists M \in \mathbb{R}^*,\ \forall N \geq m,\ c < M \leq a_N^+</script><p>由于 $m&#39; &gt; m$，若 $N \geq m&#39;$，自然有 $N \geq m&#39;$，于是</p>
 <script type="math/tex; mode=display">\exists M \in \mathbb{R}^*,\ \forall N \geq m',\ c < M \leq a_N^+</script><p>这与 $c$ 是 $(a_N^+)_{N=m}^\infty$ 的最大下界矛盾。所以 $c$ 是 $(a_N^+)_{N=m}^\infty$ 的最大下界，即 $\inf(a_N^+)_{N=m}^\infty = c$。<br><br></p>
 </li>
 </ul>
@@ -305,20 +305,20 @@ $$ a_{N'}^+ =\sup(a_n)_{n=N'}^\infty \leq a_N^+ $$
 <li><p><div class="green bold">证明 $(a_n)_{n=m}^\infty$ 的下极限等于 $c$ 等且仅当 $(a_n)_{n=m'}^\infty$ 的下极限等于 $c$。</div><br>接下来两个证明和上面两个差不多，写出来只是为了确定走得通，所以也比较简略。</p>
 <ul>
 <li><p><div class="underline" id="6.3.2-5-x">先证明 $(a_N^-)_{n=m}^\infty$ 是一个递增序列，即 $N'>N \;\;\Longrightarrow\;\; a_{N'}^- \geq a_N^-$。</div><br>由 $a_N^- = \sup(a_n)_{n=m}^\infty$ 得到</p>
-<script type="math/tex; mode=display">\forall n \geq N,\ a_N^- \leq a_n</script><p>再由 $N’ &gt; N$ 得到</p>
-<script type="math/tex; mode=display">\forall n \geq N',\ a_N^- \leq a_n</script><p>所以 $a_N^-$ 是 $(a_n)_{n=N’}^\infty$ 的下界，因此</p>
+<script type="math/tex; mode=display">\forall n \geq N,\ a_N^- \leq a_n</script><p>再由 $N&#39; &gt; N$ 得到</p>
+<script type="math/tex; mode=display">\forall n \geq N',\ a_N^- \leq a_n</script><p>所以 $a_N^-$ 是 $(a_n)_{n=N&#39;}^\infty$ 的下界，因此</p>
 <script type="math/tex; mode=display">a_{N'}^- = sup(a_n)_{n=N'}^\infty \geq a_N^-</script></li>
 <li><p><div class="underline">证明：$\sup(a_N^-)_{N=m}^\infty = c \;\;\Longrightarrow\;\; \sup(a_N^-)_{N=m'}^\infty = c$。</div><br>展开 $\sup(a_N^-)_{N=m}^\infty = c$</p>
-<script type="math/tex; mode=display">\forall N \geq m,\ c \geq a_N^-</script><p>由于 $m’ \geq m$</p>
-<script type="math/tex; mode=display">\forall N \geq m',\ c \geq a_N^-</script><p>所以 $c$ 是 $(a_N^-)_{N=m’}^\infty$ 的上界。假定 $c$ 不是 $(a_N^-)_{N=m’}^\infty$ 的最小上界</p>
-<script type="math/tex; mode=display">\exists M \in \mathbb{R}^*,\ \forall N \geq m', c > M \geq a_N^-</script><p>当 $N$ 满足 $m’ &gt; N \geq m$，$a_{m’}^- \geq a_N^- $，于是</p>
+<script type="math/tex; mode=display">\forall N \geq m,\ c \geq a_N^-</script><p>由于 $m&#39; \geq m$</p>
+<script type="math/tex; mode=display">\forall N \geq m',\ c \geq a_N^-</script><p>所以 $c$ 是 $(a_N^-)_{N=m&#39;}^\infty$ 的上界。假定 $c$ 不是 $(a_N^-)_{N=m&#39;}^\infty$ 的最小上界</p>
+<script type="math/tex; mode=display">\exists M \in \mathbb{R}^*,\ \forall N \geq m', c > M \geq a_N^-</script><p>当 $N$ 满足 $m&#39; &gt; N \geq m$，$a_{m&#39;}^- \geq a_N^- $，于是</p>
 <script type="math/tex; mode=display">\exists M \in \mathbb{R}^*,\ \forall m' > N \geq m, c > M \geq a_{m'}^- \geq a_N^-</script><p>综上所述</p>
-<script type="math/tex; mode=display">\exists M \in \mathbb{R}^*,\ \forall N \geq m, c > M \geq a_N^-</script><p>与 $\sup(a_N^-)_{N=m}^\infty = c$ 矛盾。所以 $\sup(a_N^-)_{N=m’}^\infty = c$。</p>
+<script type="math/tex; mode=display">\exists M \in \mathbb{R}^*,\ \forall N \geq m, c > M \geq a_N^-</script><p>与 $\sup(a_N^-)_{N=m}^\infty = c$ 矛盾。所以 $\sup(a_N^-)_{N=m&#39;}^\infty = c$。</p>
 </li>
 <li><p><div class="underline">证明：$\sup(a_N^-)_{N=m'}^\infty = c \;\;\Longrightarrow\;\; \sup(a_N^-)_{N=m}^\infty = c$。</div><br>先用反证法证明 $c$ 是 $(a_N^-)_{N=m}^\infty$ 的上界。假定</p>
-<script type="math/tex; mode=display">\exists N \geq m,\ a_N^- > c</script><p>若 $N \geq m’$，说明 $c$ 不是 $(a_N^-)_{N=m’}^\infty$ 的上界，矛盾。<br>若 $N &lt; m’$，$c &lt; a_N^- \leq a_{m’}^-$，矛盾。<br>所以 $c$ 是 $(a_N^-)_{N=m}^\infty$ 的上界。再来是证明 $c$ 是 $(a_N^-)_{N=m}^\infty$ 的最小上界。仍然是反证法。假定</p>
-<script type="math/tex; mode=display">\exists M \in \mathbf{R}^*,\ \forall N \geq m,\ c > M \geq a_N^-</script><p>由于 $m’ &gt; m$</p>
-<script type="math/tex; mode=display">\exists M \in \mathbf{R}^*,\ \forall N \geq m',\ c > M \geq a_N^-</script><p>与 $\sup(a_N^-)_{N=m‘}^\infty = c$ 矛盾。因此 $\sup(a_N^-)_{N=m}^\infty = c$。</p>
+<script type="math/tex; mode=display">\exists N \geq m,\ a_N^- > c</script><p>若 $N \geq m&#39;$，说明 $c$ 不是 $(a_N^-)_{N=m&#39;}^\infty$ 的上界，矛盾。<br>若 $N &lt; m&#39;$，$c &lt; a_N^- \leq a_{m&#39;}^-$，矛盾。<br>所以 $c$ 是 $(a_N^-)_{N=m}^\infty$ 的上界。再来是证明 $c$ 是 $(a_N^-)_{N=m}^\infty$ 的最小上界。仍然是反证法。假定</p>
+<script type="math/tex; mode=display">\exists M \in \mathbb{R}^*,\ \forall N \geq m,\ c > M \geq a_N^-</script><p>由于 $m&#39; &gt; m$</p>
+<script type="math/tex; mode=display">\exists M \in \mathbb{R}^*,\ \forall N \geq m',\ c > M \geq a_N^-</script><p>与 $\sup(a_N^-)_{N=m&#39;}^\infty = c$ 矛盾。因此 $\sup(a_N^-)_{N=m}^\infty = c$。</p>
 </li>
 </ul>
 </li>
@@ -377,19 +377,19 @@ $$ a_{N'}^+ =\sup(a_n)_{n=N'}^\infty \leq a_N^+ $$
 <script type="math/tex; mode=display">L^- > \inf(a_N^+)_{N=m}^\infty</script><p>根据命题 <strong>命题 6.3.6</strong> 得到</p>
 <script type="math/tex; mode=display">\exists N' \geq m,\ a_{N'}^+ < L^-</script><p>接着展开 $L^-$</p>
 <script type="math/tex; mode=display">\exists N' \geq m,\ a_{N'}^+ < \sup(a_N^-)_{N=m}^\infty</script><p>再次根据命题 <strong>命题 6.3.6</strong> 得到</p>
-<script type="math/tex; mode=display">\exists N',N'' \geq m,\ a_{N'}^+ < a_{N''}^-</script><p>$N’$ 和 $N’’$ 都是整数，根据整数序的三歧性分三种情况讨论</p>
+<script type="math/tex; mode=display">\exists N',N'' \geq m,\ a_{N'}^+ < a_{N''}^-</script><p>$N&#39;$ 和 $N&#39;&#39;$ 都是整数，根据整数序的三歧性分三种情况讨论</p>
 <ol>
-<li><p><span id="6.4.3-c-3-1">$N’ = N’’$</span><br>首先由 $a_N^+$ 的定义 $a_N^+ = \sup(a_n)_{n=N}^\infty$ 和 <strong>命题 6.3.6</strong> 得 $\forall n \geq N,\; a_n \leq a_N^+$；<br>同理由 $a_N^-$ 的定义 $a_N^- = \inf(a_n)_{n=N}^\infty$ 和 <strong>命题 6.3.6</strong> 得 $\forall n \geq N,\; a_n \geq a_N^-$；<br>由实数序的传递性得到 $a_N^+ \geq a_N^-$。</p>
-<p>由于 $N’ = N’’$，$a_{N’}^+ = a_{N’’}^-$。所以不存在 $N’=N’’\geq m$ 使得 $a_{N’}^+ &lt; a_{N’’}^-$。</p>
+<li><p><span id="6.4.3-c-3-1">$N&#39; = N&#39;&#39;$</span><br>首先由 $a_N^+$ 的定义 $a_N^+ = \sup(a_n)_{n=N}^\infty$ 和 <strong>命题 6.3.6</strong> 得 $\forall n \geq N,\; a_n \leq a_N^+$；<br>同理由 $a_N^-$ 的定义 $a_N^- = \inf(a_n)_{n=N}^\infty$ 和 <strong>命题 6.3.6</strong> 得 $\forall n \geq N,\; a_n \geq a_N^-$；<br>由实数序的传递性得到 $a_N^+ \geq a_N^-$。</p>
+<p>由于 $N&#39; = N&#39;&#39;$，$a_{N&#39;}^+ = a_{N&#39;&#39;}^-$。所以不存在 $N&#39;=N&#39;&#39;\geq m$ 使得 $a_{N&#39;}^+ &lt; a_{N&#39;&#39;}^-$。</p>
 </li>
-<li><p>$N’ &lt; N’’$<br>在 <a href="#6.3.2-3-x">练习 6.4.2 的第 3 个命题中</a> 已经证明了 $(a_N^+)_{n=m}^\infty$ 是递减的，所以 $a_{N’}^+ \geq a_{N’’}^+$。再根据<a href="#6.4.3-c-3-1">上面的证明</a>我们知道 $a_{N’’}^+ \geq a_{N’’}^-$，由实数序的传递性得到 $a_{N’}^+ \geq a_{N’’}^-$。</p>
-<p>因此不存在 $N’ &lt; N’’,\; N’,N’’\geq m$ 使得 $a_{N’}^+ &lt; a_{N’’}^-$。</p>
+<li><p>$N&#39; &lt; N&#39;&#39;$<br>在 <a href="#6.3.2-3-x">练习 6.4.2 的第 3 个命题中</a> 已经证明了 $(a_N^+)_{n=m}^\infty$ 是递减的，所以 $a_{N&#39;}^+ \geq a_{N&#39;&#39;}^+$。再根据<a href="#6.4.3-c-3-1">上面的证明</a>我们知道 $a_{N&#39;&#39;}^+ \geq a_{N&#39;&#39;}^-$，由实数序的传递性得到 $a_{N&#39;}^+ \geq a_{N&#39;&#39;}^-$。</p>
+<p>因此不存在 $N&#39; &lt; N&#39;&#39;,\; N&#39;,N&#39;&#39;\geq m$ 使得 $a_{N&#39;}^+ &lt; a_{N&#39;&#39;}^-$。</p>
 </li>
-<li><p>$N’ &gt; N’’$<br>根据 <a href="#6.3.2-5-x">练习 6.4.2 的第 5 个命题中</a> 中的证明，$(a_N^-)_{n=m}^\infty$ 是递增的，所以 $a_{N’}^- \geq a_{N’’}^-$。再根据<a href="#6.4.3-c-3-1">上面的证明</a>我们知道 $a_{N’}^+ \geq a_{N’}^-$，由实数序的传递性得到 $a_{N’}^+ \geq a_{N’’}^-$。</p>
-<p>因此不存在 $N’ &gt; N’’,\; N’,N’’\geq m$ 使得 $a_{N’}^+ &lt; a_{N’’}^-$。</p>
+<li><p>$N&#39; &gt; N&#39;&#39;$<br>根据 <a href="#6.3.2-5-x">练习 6.4.2 的第 5 个命题中</a> 中的证明，$(a_N^-)_{n=m}^\infty$ 是递增的，所以 $a_{N&#39;}^- \geq a_{N&#39;&#39;}^-$。再根据<a href="#6.4.3-c-3-1">上面的证明</a>我们知道 $a_{N&#39;}^+ \geq a_{N&#39;}^-$，由实数序的传递性得到 $a_{N&#39;}^+ \geq a_{N&#39;&#39;}^-$。</p>
+<p>因此不存在 $N&#39; &gt; N&#39;&#39;,\; N&#39;,N&#39;&#39;\geq m$ 使得 $a_{N&#39;}^+ &lt; a_{N&#39;&#39;}^-$。</p>
 </li>
 </ol>
-<p>在三种情况下符合条件的 $N’$ 和 $N’’$ 都不存在，得到矛盾，假设不成立，推出 $L^- \leq L^+$。</p>
+<p>在三种情况下符合条件的 $N&#39;$ 和 $N&#39;&#39;$ 都不存在，得到矛盾，假设不成立，推出 $L^- \leq L^+$。</p>
 </li>
 </ul>
 </li>
@@ -421,11 +421,11 @@ $$ a_{N'}^+ =\sup(a_n)_{n=N'}^\infty \leq a_N^+ $$
    )
  )
 )</script><p>也就是说存在一个 $\epsilon &gt; 0$，还存在一个对应的 $N_{\epsilon} \geq m$，对于任意 $n \geq N_{\epsilon}$ 有 $a_n -L^+ &gt; \epsilon$ 或 $a_n - L^+ &lt; -\epsilon$。</p>
-<p>正如之后会证明的，对于每个 $n$ 都存在一个 $n’ \geq n$ 使得 $a_{n’} - L^+ &gt; \epsilon$。<br>由于 $n’ \geq n$，根据 $a_n^+$ 的定义可知 $a_n^+ \geq a_{n’}$，于是对于每个 $n &gt; N_{\epsilon}$ 都有 $a_n^+ \geq L^+ + \epsilon$，由此可以得出 $L^+ + \epsilon$ 是 $(a_n)_{n=N_\epsilon}^\infty$ 的下界，由 <strong>命题 6.3.6</strong> 可得 $L^+ + \epsilon \leq \inf(a_n)_{n=N_\epsilon}^\infty$，由 <strong>练习 6.4.2</strong> 可知 $\inf(a_n)_{n=N_\epsilon}^\infty = \inf(a_n)_{n=m}^\infty$，所以 $L^+ + \epsilon \leq \inf(a_n)_{n=m}^\infty = L^+$</p>
+<p>正如之后会证明的，对于每个 $n$ 都存在一个 $n&#39; \geq n$ 使得 $a_{n&#39;} - L^+ &gt; \epsilon$。<br>由于 $n&#39; \geq n$，根据 $a_n^+$ 的定义可知 $a_n^+ \geq a_{n&#39;}$，于是对于每个 $n &gt; N_{\epsilon}$ 都有 $a_n^+ \geq L^+ + \epsilon$，由此可以得出 $L^+ + \epsilon$ 是 $(a_n)_{n=N_\epsilon}^\infty$ 的下界，由 <strong>命题 6.3.6</strong> 可得 $L^+ + \epsilon \leq \inf(a_n)_{n=N_\epsilon}^\infty$，由 <strong>练习 6.4.2</strong> 可知 $\inf(a_n)_{n=N_\epsilon}^\infty = \inf(a_n)_{n=m}^\infty$，所以 $L^+ + \epsilon \leq \inf(a_n)_{n=m}^\infty = L^+$</p>
 <ul>
-<li><p><div class="underline">现在来证 $\forall n \geq N_\epsilon(\exists n' \geq n (a_{n'} - L^+ > \epsilon))$</div><br>反证法。因为对于任意 $n \geq N_{\epsilon}$ 有 $a_n -L^+ &gt; \epsilon$ 或 $a_n - L^+ &lt; -\epsilon$，所以 $a_n’ -L^+ &gt; \epsilon$ 的反面是 $a_n’ - L^+ &lt; -\epsilon$，假定 $\exists n \geq N_\epsilon(\forall n’ \geq n (a_{n’} - L^+ &lt; -\epsilon))$</p>
-<p>由假设可知存在 $n \geq N_\epsilon$ 对于任意 $n’ \geq n$，$a_{n’} \leq L^+ - \epsilon$，即 $L^+ - \epsilon$ 是 $(a_{n’})_{n’=n}^\infty$ 的上界，由于 <strong>练习 6.4.2</strong> 可知 $\sup(a_{n’})_{n’=n}^\infty = \sup(a_{n’})_{n’=N_\epsilon}^\infty$，所以 $L^+ - \epsilon \geq a_{N_\epsilon}^+$，得到矛盾。<br>这是因为，由 $L^+ = \inf(a_N^+)_{N=m}^\infty$ 可知 $L^+ /leq a_{N_\epsilon}^+$，而 $\epsilon &gt; 0$ 所以 $L^+ - \epsilon &lt; a_{N_\epsilon}^+$。</p>
-<p>由此证明了 $\forall n \geq N_\epsilon(\exists n’ \geq n (a_{n’} - L^+ &gt; \epsilon))$。</p>
+<li><p><div class="underline">现在来证 $\forall n \geq N_\epsilon(\exists n' \geq n (a_{n'} - L^+ > \epsilon))$</div><br>反证法。因为对于任意 $n \geq N_{\epsilon}$ 有 $a_n -L^+ &gt; \epsilon$ 或 $a_n - L^+ &lt; -\epsilon$，所以 $a_n&#39; -L^+ &gt; \epsilon$ 的反面是 $a_n&#39; - L^+ &lt; -\epsilon$，假定 $\exists n \geq N_\epsilon(\forall n&#39; \geq n (a_{n&#39;} - L^+ &lt; -\epsilon))$</p>
+<p>由假设可知存在 $n \geq N_\epsilon$ 对于任意 $n&#39; \geq n$，$a_{n&#39;} \leq L^+ - \epsilon$，即 $L^+ - \epsilon$ 是 $(a_{n&#39;})_{n&#39;=n}^\infty$ 的上界，由于 <strong>练习 6.4.2</strong> 可知 $\sup(a_{n&#39;})_{n&#39;=n}^\infty = \sup(a_{n&#39;})_{n&#39;=N_\epsilon}^\infty$，所以 $L^+ - \epsilon \geq a_{N_\epsilon}^+$，得到矛盾。<br>这是因为，由 $L^+ = \inf(a_N^+)_{N=m}^\infty$ 可知 $L^+ /leq a_{N_\epsilon}^+$，而 $\epsilon &gt; 0$ 所以 $L^+ - \epsilon &lt; a_{N_\epsilon}^+$。</p>
+<p>由此证明了 $\forall n \geq N_\epsilon(\exists n&#39; \geq n (a_{n&#39;} - L^+ &gt; \epsilon))$。</p>
 </li>
 </ul>
 <p>$L^-$ 的证明也是类似的。</p>
@@ -512,7 +512,7 @@ $$ a_{N'}^+ =\sup(a_n)_{n=N'}^\infty \leq a_N^+ $$
 
 <ul>
 <li><p>首先证明定义是成功的，即自然数只能表示为 $3k + 1$、$3k + 2$、$3k$ 三种形式中恰好一种。</p>
-<p>先证明唯一性。反证法，假设一个自然数 $a$ 可以表示成 $3k$ 和 $3k+1$ 两种形式，于是有 $a = 3k = 3k’+1$，由整数序的定义得到 $3k &gt; 3k’$，由有理数正乘法保序得到 $k &gt; k’$’，根据 <strong>命题 2.2.12 (自然数的序的基本性质)</strong> 得到 $k \geq k’ + 1$，再次因为正乘法保序得 $3k \geq 3k’ + 3$，由整数序的定义得到 $3k \geq 3k’ + 3 &gt; 3k’ + 1$，即 $3k &gt; 3k’ + 1$，与整数序的三歧性矛盾，因此 $a$ 不可能同时表示成 $3k$ 和 $3k+1$ 两种形式。其他的证明也是类似的。</p>
+<p>先证明唯一性。反证法，假设一个自然数 $a$ 可以表示成 $3k$ 和 $3k+1$ 两种形式，于是有 $a = 3k = 3k&#39;+1$，由整数序的定义得到 $3k &gt; 3k&#39;$，由有理数正乘法保序得到 $k &gt; k&#39;$&#39;，根据 <strong>命题 2.2.12 (自然数的序的基本性质)</strong> 得到 $k \geq k&#39; + 1$，再次因为正乘法保序得 $3k \geq 3k&#39; + 3$，由整数序的定义得到 $3k \geq 3k&#39; + 3 &gt; 3k&#39; + 1$，即 $3k &gt; 3k&#39; + 1$，与整数序的三歧性矛盾，因此 $a$ 不可能同时表示成 $3k$ 和 $3k+1$ 两种形式。其他的证明也是类似的。</p>
 <p>证明存在性。用归纳推理，当 $n = 0$ 可以表示成 $3 \times 0$，命题成立；假定 $n$ 可以表示成三种形式中的一种，下面分情况讨论</p>
 <ul>
 <li>若 $n = 3k$，那么 $n+1 = 3k + 1$</li>
@@ -719,24 +719,22 @@ $$ a_{N'}^+ =\sup(a_n)_{n=N'}^\infty \leq a_N^+ $$
         }());
     </script>
 
-<!-- mathjax -->
+<!-- katex -->
 
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        },
-        TeX: { equationNumbers: { autoNumber: "AMS" } }
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mathtex-script-type.min.js" integrity="sha384-LJ2FmexL77rmGm6SIpxq7y+XA6bkLzGZEgCywzKOZG/ws4va9fUVu2neMjvc3zdv" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+      ]
     });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.classList.add('has-jax');
-    });
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  });
+</script>
 
 
 </body>
