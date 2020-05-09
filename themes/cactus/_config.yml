@@ -77,7 +77,7 @@ copyright:
 #   - url: where the logo can be found
 #   - gravatar: whether to use your Gravatar as the logo
 logo:
-  enabled: true
+  enabled: false
   width: 50
   height: 50
   url: /images/logo.png
