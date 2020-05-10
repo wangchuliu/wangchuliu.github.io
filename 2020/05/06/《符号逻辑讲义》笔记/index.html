@@ -14,7 +14,7 @@
 <meta property="og:description" content="2.1 联结词与复合句命题联结词是带空格的表达式，使得以陈述句填入这些空格的结果总是陈述句。可以说是陈述句集合上的 $n$ 元函数，一旦给定有序的 $n$ 个陈述句作为其自变量的取值，该函数的值是个唯一的陈述句。 复合句是用到联结词的陈述句。不是复合句的陈述句叫简单句。复合句中被联结的句子就是它的真子句，简单句不是用联结词联结某些句子形成的，从而没有真子句。 设 $\phi$ 和 $\psi$ 都">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-05-06T01:39:10.000Z">
-<meta property="article:modified_time" content="2020-05-10T03:49:52.816Z">
+<meta property="article:modified_time" content="2020-05-10T08:42:13.124Z">
 <meta property="article:author" content="王初六">
 <meta property="article:tag" content="逻辑">
 <meta property="article:tag" content="数学">
@@ -160,7 +160,7 @@
 <h3 id="2-2-真值函数联结词和非真值函数联结词"><a href="#2-2-真值函数联结词和非真值函数联结词" class="headerlink" title="2.2 真值函数联结词和非真值函数联结词"></a><span class="indianred">2.2</span> 真值函数联结词和非真值函数联结词</h3><p>对任意的联结词，如果以它为主联结词的复合句的真值完全由该句的直接子句的真值来决定，那么这个联结词就是<strong>真值函数联结词</strong>。如果一个联结词不是真值函数联结词，就是一个<strong>非真值函数联结词</strong>。</p>
 <p>通过思考“真值函数”这个词理解概念的意义，真值函数的可以理解为把真值映射到唯一确定的一个真值，测试一次输入真得到输出结果真，对于一个真值函数，我们就可以期待每次输入真都是输出真。</p>
 <p>要说明一个联结词不是真值函数联结词，可以分别填入两个真值相同的句子，若得到的两个复合句真值不同，则一定是非真值函数联结词。</p>
-<h3 id="2-3-符号化"><a href="#2-3-符号化" class="headerlink" title="2.3 符号化"></a><span class="indianred">2.3</span> 符号化</h3><p>常用的真值函数联结词</p>
+<h3 id="2-3-符号化"><a href="#2-3-符号化" class="headerlink" title="2.3 符号化"></a><span class="indianred">2.3</span> 符号化</h3><p>常用的真值函数联结词（$\sim$ 这个符号写 $\to \sim p$ 时空格不对，所以换成 $\lnot$，这个是这样 $\to \lnot p$）</p>
 <div class="table-container">
 <table>
 <thead>
@@ -173,7 +173,7 @@
 <tbody>
 <tr>
 <td style="text-align:left">否定</td>
-<td style="text-align:center">$\neg$</td>
+<td style="text-align:center">$\lnot$</td>
 <td style="text-align:right">并非，并不，不……</td>
 </tr>
 <tr>
@@ -200,19 +200,19 @@
 </table>
 </div>
 <p><strong>相对于真值函数联结词简单的句子</strong>，是指那些<span class="wavy">没有主联结词</span>或<span class="wavy">没有真值函数联结词</span>的句子，包括简单句（没有使用联结词）和以非真值函数联结词为主联结词得句子以及{TODO: 由量词决定了其基本结构得句子}等等。{TODO: 上述说明只是一种直观说法，不是定义}。</p>
-<p>“只有 $p$ 才 $q$”的符号化结果是“$\neg p \to \neg q$”或“$q \to p$”。可以理解为“有 $p$ 不一定有 $q$，但有 $q$ 一定有 $p$”。</p>
-<p>“$p$ 除非 $q$”的符号化结果是“$p \wedge q$”或“$\neg q \to p$”。可以说成“$p$ 仅当非 $q$”或“要么 $p$ 要么 $q$”。</p>
+<p>“只有 $p$ 才 $q$”的符号化结果是“$\lnot p \to \lnot q$”或“$q \to p$”。可以理解为“有 $p$ 不一定有 $q$，但有 $q$ 一定有 $p$”。</p>
+<p>“$p$ 除非 $q$”的符号化结果是“$p \wedge q$”或“$\lnot q \to p$”。可以说成“$p$ 仅当非 $q$”或“要么 $p$ 要么 $q$”。</p>
 <h3 id="2-4-命题逻辑的基本语法"><a href="#2-4-命题逻辑的基本语法" class="headerlink" title="2.4 命题逻辑的基本语法"></a><span class="indianred">2.4</span> 命题逻辑的基本语法</h3><p>形式语言 $\mathscr{L}_0$。$\mathscr{L}$ 是花体的 $L$，$\LaTeX$ 代码是 <code>\mathscr{L}</code>，应该是取自 <code>Language</code> 的首字母。</p>
 <ul>
 <li>初始符号<ul>
 <li>命题变号：$p_0, p_1, p_2, \cdots$；</li>
-<li>联结词：$\neg,\vee,\wedge,\to,\leftrightarrow$；</li>
+<li>联结词：$\lnot,\vee,\wedge,\to,\leftrightarrow$；</li>
 <li>左右括号：$($ 和 $)$。</li>
 </ul>
 </li>
 <li>$\mathscr{L}_0$-公式是由下列形成规则形成的符号串：<ul>
 <li>$\mathscr{L}_0$ 的所有命题变号都是 $\mathscr{L}_0$-公式；</li>
-<li>如果 $\phi$ 是 $\mathscr{L}_0$-公式，则 $\neg \phi$ 也是 $\mathscr{L}_0$-公式；</li>
+<li>如果 $\phi$ 是 $\mathscr{L}_0$-公式，则 $\lnot \phi$ 也是 $\mathscr{L}_0$-公式；</li>
 <li>如果 $\phi$ 和 $\psi$ 是 $\mathscr{L}_0$-公式，则 $(\phi\vee\psi)$、$(\phi\wedge\psi)$、$(\phi\to\psi)$ 和 $(\phi\leftrightarrow\psi)$ 都是 $\mathscr{L}_0$-公式；</li>
 <li>只有这些是 $\mathscr{L}_0$-公式。</li>
 </ul>
@@ -431,16 +431,42 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mathtex-script-type.min.js" integrity="sha384-LJ2FmexL77rmGm6SIpxq7y+XA6bkLzGZEgCywzKOZG/ws4va9fUVu2neMjvc3zdv" crossorigin="anonymous"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
+    let macros = {
+      "\\T": "\\text{T}",
+      "\\F": "\\textcolor{gray}{\\text{F}}",
+    };
+
     renderMathInElement(document.body, {
       delimiters: [
-        { left: "$$", right: "$$", display: true },
         { left: "$", right: "$", display: false },
-      ]
+      ],
+      macros: macros
+    });
+
+    let scripts = document.body.getElementsByTagName("script");
+    scripts = Array.prototype.slice.call(scripts);
+    scripts.forEach(function(script) {
+        if (!script.type || !script.type.match(/math\/tex/i)) {
+            return -1;
+        }
+        const display =
+              (script.type.match(/mode\s*=\s*display(;|\s|\n|$)/) != null);
+
+        const katexElement = document.createElement(display ? "div" : "span");
+        katexElement.setAttribute("class",
+                                  display ? "equation" : "inline-equation");
+        try {
+            katex.render(script.text, katexElement, {displayMode: display, macros: macros});
+        } catch (err) {
+            //console.error(err); linter doesn't like this
+            katexElement.textContent = script.text;
+        }
+        script.parentNode.replaceChild(katexElement, script);
     });
   });
+
 </script>
 
 

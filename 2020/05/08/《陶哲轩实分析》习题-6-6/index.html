@@ -14,7 +14,7 @@
 <meta property="og:description" content="6.6.1 证明引理 6.6.4。设 $(a_n)_{n&#x3D;0}^\infty$，$(b_n)_{n&#x3D;0}^\infty$，$(c_n)_{n&#x3D;0}^\infty$ 是实数列。那么 $(a_n)_{n&#x3D;0}^\infty$ 是 $(a_n)_{n&#x3D;0}^\infty$ 的子序列。进而，如果 $(b_n)_{n&#x3D;0}^\infty$ 是 $(a_n)_{n&#x3D;0}^\infty$ 的子序列，而 $(c_">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-05-08T07:41:42.000Z">
-<meta property="article:modified_time" content="2020-05-09T02:12:22.147Z">
+<meta property="article:modified_time" content="2020-05-10T07:35:27.744Z">
 <meta property="article:author" content="王初六">
 <meta property="article:tag" content="数学">
 <meta property="article:tag" content="陶哲轩实分析">
@@ -388,16 +388,42 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mathtex-script-type.min.js" integrity="sha384-LJ2FmexL77rmGm6SIpxq7y+XA6bkLzGZEgCywzKOZG/ws4va9fUVu2neMjvc3zdv" crossorigin="anonymous"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
+    let macros = {
+      "\\T": "\\text{T}",
+      "\\F": "\\textcolor{gray}{\\text{F}}",
+    };
+
     renderMathInElement(document.body, {
       delimiters: [
-        { left: "$$", right: "$$", display: true },
         { left: "$", right: "$", display: false },
-      ]
+      ],
+      macros: macros
+    });
+
+    let scripts = document.body.getElementsByTagName("script");
+    scripts = Array.prototype.slice.call(scripts);
+    scripts.forEach(function(script) {
+        if (!script.type || !script.type.match(/math\/tex/i)) {
+            return -1;
+        }
+        const display =
+              (script.type.match(/mode\s*=\s*display(;|\s|\n|$)/) != null);
+
+        const katexElement = document.createElement(display ? "div" : "span");
+        katexElement.setAttribute("class",
+                                  display ? "equation" : "inline-equation");
+        try {
+            katex.render(script.text, katexElement, {displayMode: display, macros: macros});
+        } catch (err) {
+            //console.error(err); linter doesn't like this
+            katexElement.textContent = script.text;
+        }
+        script.parentNode.replaceChild(katexElement, script);
     });
   });
+
 </script>
 
 

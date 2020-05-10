@@ -14,7 +14,7 @@
 <meta property="og:description" content="最后写在最前一开始以为很好写，看别人答案觉得写得不清楚，自己写过才明白要说清楚不容易，别说把思路也写出来，觉得难的部分，憋半天憋不出来。没学过数理逻辑，符号都是乱用的，一开始觉得用符号写出来可以把条件都列出来，观察它们的形状，但是实际上做草稿可能有用，看的人并不觉得方便，用文字叙述的话，存在、任意嵌套多了也很麻烦。有时觉得想出来了，写的时候才发现不对，所以写出来还是有好处的，但是花了几天才写了一节">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-05-05T06:10:59.000Z">
-<meta property="article:modified_time" content="2020-05-09T02:12:15.698Z">
+<meta property="article:modified_time" content="2020-05-10T07:35:21.920Z">
 <meta property="article:author" content="王初六">
 <meta property="article:tag" content="数学">
 <meta property="article:tag" content="陶哲轩实分析">
@@ -724,16 +724,42 @@ $$ a_{N'}^+ =\sup(a_n)_{n=N'}^\infty \leq a_N^+ $$
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mathtex-script-type.min.js" integrity="sha384-LJ2FmexL77rmGm6SIpxq7y+XA6bkLzGZEgCywzKOZG/ws4va9fUVu2neMjvc3zdv" crossorigin="anonymous"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
+    let macros = {
+      "\\T": "\\text{T}",
+      "\\F": "\\textcolor{gray}{\\text{F}}",
+    };
+
     renderMathInElement(document.body, {
       delimiters: [
-        { left: "$$", right: "$$", display: true },
         { left: "$", right: "$", display: false },
-      ]
+      ],
+      macros: macros
+    });
+
+    let scripts = document.body.getElementsByTagName("script");
+    scripts = Array.prototype.slice.call(scripts);
+    scripts.forEach(function(script) {
+        if (!script.type || !script.type.match(/math\/tex/i)) {
+            return -1;
+        }
+        const display =
+              (script.type.match(/mode\s*=\s*display(;|\s|\n|$)/) != null);
+
+        const katexElement = document.createElement(display ? "div" : "span");
+        katexElement.setAttribute("class",
+                                  display ? "equation" : "inline-equation");
+        try {
+            katex.render(script.text, katexElement, {displayMode: display, macros: macros});
+        } catch (err) {
+            //console.error(err); linter doesn't like this
+            katexElement.textContent = script.text;
+        }
+        script.parentNode.replaceChild(katexElement, script);
     });
   });
+
 </script>
 
 
