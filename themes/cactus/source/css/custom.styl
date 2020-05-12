@@ -27,7 +27,10 @@
 .list-lower-roman+ol, .list-lower-roman+ul
   list-style-type: lower-roman
 
-.list-green+ol, .list-green+ul
+.list-green+ol>li>p:first-child, .list-green+ul>li>p:first-child
+  color: rgba(86,124,119,0.8)
+
+.list-all-green+ol>li, .list-all-green+ul>li
   color: rgba(86,124,119,0.8)
 
 ol > li > h3
