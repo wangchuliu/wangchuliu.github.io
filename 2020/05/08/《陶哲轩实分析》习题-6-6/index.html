@@ -14,7 +14,7 @@
 <meta property="og:description" content="6.6.1 证明引理 6.6.4。设 $(a_n)_{n&#x3D;0}^\infty$，$(b_n)_{n&#x3D;0}^\infty$，$(c_n)_{n&#x3D;0}^\infty$ 是实数列。那么 $(a_n)_{n&#x3D;0}^\infty$ 是 $(a_n)_{n&#x3D;0}^\infty$ 的子序列。进而，如果 $(b_n)_{n&#x3D;0}^\infty$ 是 $(a_n)_{n&#x3D;0}^\infty$ 的子序列，而 $(c_">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-05-08T07:41:42.000Z">
-<meta property="article:modified_time" content="2020-05-10T07:35:27.744Z">
+<meta property="article:modified_time" content="2020-05-12T06:33:25.448Z">
 <meta property="article:author" content="王初六">
 <meta property="article:tag" content="数学">
 <meta property="article:tag" content="陶哲轩实分析">
@@ -187,7 +187,7 @@
 <p>根据定义对于每个 $|b_j| = |a_{n_j}| \geq j$，根据<strong>命题 5.4.8</strong>有 $\frac{1}{|b_j|} \leq \frac{1}{j}$，展开绝对值得到 $-\frac{1}{j} \leq \frac{1}{b_j} \leq \frac{1}{j}$。由命题 <strong>6.1.11</strong> 已经知道 $\lim\limits_{j \to \infty}\frac{1}{j} = 0$，由极限算率可得 $\lim\limits_{j \to \infty}-\frac{1}{j} = 0$，再由挤压判别法可得 $\lim\limits_{j \to \infty}\frac{1}{b_j} = 0$。</p>
 </li>
 </ul>
-<h2 id="6-6-4-证明命题-6-6-5。"><a href="#6-6-4-证明命题-6-6-5。" class="headerlink" title="6.6.4 证明命题 6.6.5。"></a><span class="indianred">6.6.4</span> 证明命题 6.6.5。</h2><div class="green bold list-lower-alpha list-green">设 $(a_n)_{n=0}^\infty$ 是实数列，并设 $L$ 是实数。那么下述两个命题的在逻辑上是等价的：</div>
+<h2 id="6-6-4-证明命题-6-6-5。"><a href="#6-6-4-证明命题-6-6-5。" class="headerlink" title="6.6.4 证明命题 6.6.5。"></a><span class="indianred">6.6.4</span> 证明命题 6.6.5。</h2><div class="green bold list-lower-alpha list-all-green">设 $(a_n)_{n=0}^\infty$ 是实数列，并设 $L$ 是实数。那么下述两个命题的在逻辑上是等价的：</div>
 
 <ul>
 <li>序列 $(a_n)_{n=0}^\infty$ 收敛到 $L$。</li>
@@ -393,6 +393,8 @@
     let macros = {
       "\\T": "\\text{T}",
       "\\F": "\\textcolor{gray}{\\text{F}}",
+      "\\cmark": "✔",
+      "\\xmark": "✘",
     };
 
     renderMathInElement(document.body, {
