@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>《陶哲轩实分析》习题 6.7</title>
+      <link href="/2020/05/12/%E3%80%8A%E9%99%B6%E5%93%B2%E8%BD%A9%E5%AE%9E%E5%88%86%E6%9E%90%E3%80%8B%E4%B9%A0%E9%A2%98-6-7/"/>
+      <url>/2020/05/12/%E3%80%8A%E9%99%B6%E5%93%B2%E8%BD%A9%E5%AE%9E%E5%88%86%E6%9E%90%E3%80%8B%E4%B9%A0%E9%A2%98-6-7/</url>
+      
+        <content type="html"><![CDATA[<h2 id="最后写在最前"><a href="#最后写在最前" class="headerlink" title="最后写在最前"></a>最后写在最前</h2><p>这次还看了这边得答案 <a href="https://christangdt.home.blog/analysis/analysis-tenrece-tao-3rd-ed/" target="_blank" rel="noopener">https://christangdt.home.blog/analysis/analysis-tenrece-tao-3rd-ed/</a> 。</p><h2 id="6-7-1-证明命题-6-7-3-的剩下的结论。"><a href="#6-7-1-证明命题-6-7-3-的剩下的结论。" class="headerlink" title="6.7.1 证明命题 6.7.3 的剩下的结论。"></a><span class="indianred">6.7.1</span> 证明命题 6.7.3 的剩下的结论。</h2><p>设 $x,y &gt; 0$ 是正的实数，并设 $q,r$ 是比例数。根据实数的定义（和命题 6.1.15）我们可以写</p><script type="math/tex; mode=display">  q = \lim\limits_{n \to \infty} q_n\\  r = \lim\limits_{n \to \infty} r_n</script><p>其中 $(q_n)_{n=1}^\infty$ 和 $(r_n)_{n=1}^\infty$ 是比例数的数列。</p><div class="list-lower-alpha list-underline list-green"></div><ul><li><p>$x^q$ 是正的实数。</p><p>由于 $(q_n)_{n=1}^\infty$ 收敛到 $q$，根据推论 6.1.17，它是有界的，所以对于一切 $n \geq 1$ 有 $|q_n| \leq M$。根据命题 5.4.12 知，存在正整数 $N$ 使得 $M &lt; N$，由序的传递性得到 $|q_n| &lt; N$，即 $-N &lt; q_n &lt; N$。</p><ul><li><p>若 $x = 1$，$x^q = \lim\limits_{n \to \infty}x^{q_n} = \lim\limits_{n \to \infty}1^{q_n} = \lim\limits_{n \to \infty}1 = 1 &gt; 0$。</p></li><li><p>若 $x &gt; 1$，由引理 5.6.9 (e) 款可得，对于任意 $n &gt; 1$ 有 $x^{-N} &lt; x^{q_n}$，根据引理 6.4.13 得到</p><script type="math/tex; mode=display">\limsup\limits_{n \to \infty}x^{-N} \leq \limsup\limits_{n \to \infty}x^{q_n}</script><p>由于 $x^{-N}$ 是常数因而 $\lim\limits_{n \to \infty}x^{-N} = x^{-N}$，而 $(x^{q_n})_{n=1}^\infty$ 也收敛，根据命题 6.4.12 有 $\limsup\limits_{n \to \infty}x^{-N} = x^{-N}$，$\limsup\limits_{n \to \infty}x^{q_n} = \lim\limits_{n \to \infty}x^{q_n}$，因此</p><script type="math/tex; mode=display">x^{-N} \leq \lim\limits_{n \to \infty}x^{q_n} = x^q</script><p>根据引理 5.6.9 (e) 款 $x^{-N} &gt; 0$，由序的传递性可得 $x^q &gt; 0$。</p></li><li><p>若 $x &lt; 1$，类似地，对于任意 $n &gt; 1$ 有 $x^{N} &lt; x^{q_n}$，进而得到</p><script type="math/tex; mode=display">x^{N} = \limsup\limits_{n \to \infty}x^{N} \leq \limsup\limits_{n \to \infty}x^{q_n} = \lim\limits_{n \to \infty}x^{q_n} = x^q</script><p>由于 $x^{N} &gt; 0$，由序的传递性可得 $x^q &gt; 0$。</p></li></ul></li><li><p>$(x^q)^r = x^{qr}$。</p><p>需要证明一个引理：对于任意实数 $q$ 和比例数 $p$ 有 $(x^q)^p = x^{qp}$，下面逐步证明。</p><ul><li><p><strong>对于任意实数 $q$ 和自然数 $n$ 有 $(x^q)^n = x^{qn}$。</strong><br>用数学归纳法归纳 $n$。当 $n$ = 0，$(x^q)^0 = 1$，$x^{q \times 0} = 1$，命题成立；假定 $(x^q)^n = x^{qn}$</p><script type="math/tex; mode=display">\begin{aligned}  (x^q)^{n+1}  &= (x^q)^n \times x^q\\  &= x^{qn} \times x^q\\  &= x^{qn + q}\\  &= x^{q(n+1)}\end{aligned}</script><p>归纳完成。</p></li><li><p><strong>推广到整数：对于任意实数 $q$ 和整数 $z$ 有 $(x^q)^z = x^{qz}$。</strong><br>若 $z$ 是正的或零,即 $z$ 是自然数已经证明。若 $z$ 是负的即可表示为 $z = -n$，其中 $n$ 是自然数</p><script type="math/tex; mode=display">\begin{aligned}  (x^q)^z &= (x^q)^{-n} = (x^{qn})^{-1}\\    &= [\lim\limits_{m \to \infty}(x^{q_m n})]^{-1}\\    &= \lim\limits_{m \to \infty}[(x^{q_m n})^{-1}]\\    &= \lim\limits_{m \to \infty}x^{- q_m n}\\\end{aligned}</script><p>根据极限算率，序列 $(- q_m n)_{m=1}^\infty$ 的极限为</p><script type="math/tex; mode=display">  \lim\limits_{m \to \infty}- q_m n = -n \lim\limits_{m \to \infty}q_m = -nq</script><p>因此根据实指数的指数运算的定义 $ x^{zq} = x^{-nq} = \lim\limits_{m \to \infty}x^{- q_m n}$，即 $x^{zq} = (x^q)^z$。</p></li><li><p><strong>推广到比例数：对于任意实数 $q$ 和比例数 $p$ 有 $(x^q)^p = x^{qp}$。</strong><br>首先根据上面的证明，对于任意正整数 $b$ 有</p><script type="math/tex; mode=display">  ((x^q)^{\frac{1}{b}})^b = (x^q)^{\frac{1}{b} \times b} = x^q\\  (x^{\frac{q}{b}})^b = x^{\frac{q}{b} \times b} = x^q</script><p>根据 (a) 款 $(x^q)^{\frac{1}{b}}$ 和 $x^{\frac{q}{b}}$ 都大于零，根据命题 4.3.12（命题 5.6.3 推广到了实数）(c) 款，$(x^q)^{\frac{1}{b}} = x^{\frac{q}{b}}$。<br>对于任意一个比例数 $q$ 我们都可以将其表示为 $\frac{a}{b}$ 的形式，其中 $a$ 是整数，$b$ 是正整数，因而有</p><script type="math/tex; mode=display">  (x^q)^p = (x^q)^{\frac{a}{b}} = ((x^q)^{\frac{1}{b}})^a = (x^{\frac{q}{b}})^a = x^{\frac{aq}{b}} = x^{qp}</script></li></ul><p><br><br>于是由实指数的指数运算的定义以及上面的引论可以得到</p><script type="math/tex; mode=display">(x^q)^r = \lim\limits_{n \to \infty}[(x^q)^{r_n}] = \lim\limits_{n \to \infty}x^{qr_n}</script><p>根据极限算率，序列 $(qr_n)_{n=1}^\infty$ 的极限为 $\lim\limits_{n \to \infty}qr_n = q\lim\limits_{n \to \infty}r_n = qr$。因此根据实指数的指数运算的定义</p><script type="math/tex; mode=display">x^{qr} = \lim\limits_{n \to \infty}x^{qr_n} = (x^q)^r</script></li><li><p>$x^{-q} = \frac{1}{x^q}$。</p><script type="math/tex; mode=display">  x^{-q} = x^{ q \times -1} = (x^q)^{-1} = \frac{1}{x^q}</script></li><li><p>如果 $q &gt; 0$，那么 $x &gt; y$ 当且仅当 $x^q &gt; y^q$。</p><p>如果 $q &gt; 0$，根据定义 5.4.3，那么它可以写成某个正限制离开零的比例数的柯西序列 $(q_n)_{n=1}^\infty$ 的形式极限，再由命题 6.1.15 可以写 $ q = \lim\limits_{n \to \infty}q_n $，对于任意 $n &gt; 1$ 有 $q_n &gt; 0$。</p><ul><li><p><strong>若 $x &gt; y$</strong>，根据实指数的指数运算的定义以及极限算率可得</p><script type="math/tex; mode=display">x^q - y^q = \lim\limits_{n \to \infty}x^{q_n} - \lim\limits_{n \to \infty}y^{q_n} = \lim\limits_{n \to \infty}(x^{q_n}-y^{q_n})</script><p>根据引理 5.6.9 (e) 款可知，对于任意 $n &gt; 1$ 有 $x^{q_n}-y^{q_n} &gt; 0$，进而由命题 5.4.9 可知 $\lim\limits_{n \to \infty}(x^{q_n}-y^{q_n}) \geq 0$，因此 $x^q  \geq y^q$。<br>现在只需用反证法证 $x^q \neq y^q$。假定 $x^q = x^q$，根据代入公理有 $(x^q)^{\frac{1}{q}} = (y^q)^{\frac{1}{q}}$，根据 (b) 款可知这蕴含 $x = y$，与条件矛盾。综上可得 $x^q &gt; y^q$。</p></li><li><p><strong>若 $x^q &gt; y^q$</strong>，用反证法证明。假定 $x \ngtr y$，由序的三歧性可知 $x = y$ 或 $x &lt; y$。若 $x = y$，由代入公理得 $x^q = y^q$，与条件矛盾；若 $x &lt; y$，可推出 $x^q &lt; y^q$，与条件矛盾。因此 $x &gt; y$。</p></li></ul></li><li><p>如果 $x &gt; 1$，那么 $x^q &gt; xr$ 当且仅当 $q &gt; r$。如果 $x &lt; 1$，那么 $x^q &gt; x^r$ 当且仅当 $q &lt; r$。</p><div class="list-underline"></div><ul><li><p>如果 $x &gt; 1$</p><ul><li><p><strong>当 $q &gt; r$</strong>，由序的定义可得 $q = r + t$，其中 $t$ 为正的实数。由此可得 $x^q = x^{r+t} = x^rx^t$。由于 $x &gt; 1$ 且 $t &gt; 0$，由 (d) 款可得 $x^t &gt; 1^t = 1$，所以 $x^q = x^r x^t &gt; x^r$。</p></li><li><p><strong>当 $x^q &gt; x^r$</strong>，同样以反证法证明。假定 $q \ngtr r$，由序的三歧性可知 $q = r$ 或 $q &lt; r$。若 $q = r$，由代入公理得 $x^q = x^r$，与条件矛盾；若 $q &lt; r$，可推出 $x^q &lt; x^r$，与条件矛盾。因此 $q &gt; r$。</p></li></ul></li><li><p>如果 $x &lt; 1$</p><ul><li><p><strong>当 $q &lt; r$</strong>，同样可有 $r = q + t$，其中 $t &gt; 0$。由于 $x &lt; 1$ 且 $t &gt; 0$，由 (d) 款和 (a) 款可得 $0 &lt; x^t &lt; 1^t = 1$，因此 $ x^r = x^q x^t &lt; x^q$。</p></li><li><p><strong>当 $x^q &lt; y^r$</strong>，同样以反证法证明。假定 $q \nless r$，由序的三歧性可知 $q = r$ 或 $q &gt; r$。若 $q = r$，由代入公理得 $x^q = x^r$，与条件矛盾；若 $q &gt; r$，可推出 $x^q &lt; x^r$，与条件矛盾。因此 $q &lt; r$。</p></li></ul></li></ul></li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 数学 </tag>
+            
+            <tag> 陶哲轩实分析 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>RockSchool Guitar Guade 3 - Overrated - solo</title>
       <link href="/2020/05/10/RockSchool-Guitar-Guade-3-Overrated-solo/"/>
       <url>/2020/05/10/RockSchool-Guitar-Guade-3-Overrated-solo/</url>
@@ -75,9 +96,9 @@
       
         <tags>
             
-            <tag> 逻辑 </tag>
-            
             <tag> 数学 </tag>
+            
+            <tag> 逻辑 </tag>
             
         </tags>
       
